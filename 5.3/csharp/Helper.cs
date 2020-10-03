@@ -4,8 +4,11 @@ using System.Text;
 
 namespace csharp
 {
-    static class Helper
+    public static class Helper
     {
-        static Position NextPosition(Direction direction, Position prevPosition, Maze maze)
+        public static Position NextPosition(Direction direction, Position prevPosition, Maze maze)
+        {
+            var desiredPosition = new Position(prevPosition, direction);
+        }
     }
 }
