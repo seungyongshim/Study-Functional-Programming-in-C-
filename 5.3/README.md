@@ -22,3 +22,9 @@ position_t next_position(direction_t direction, const position_t& previous_posit
     return maze.is_wall(desired_postion) ? previous_position : desired_position;
 }
 ```
+- 플레이어를 보여줄 방법은 무엇인가?
+- 프레젠테이션 계층에서 미로와 미로 내 플레이어를 그린다.
+- 미로는 변하지 않기 때문에 플레이어를 표현하는 것에만 신경이 쓰인다.
+```cpp
+void draw_player (const position_t& position, direction_t direction)
+``` 

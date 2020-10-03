@@ -1,12 +1,27 @@
 ﻿using System;
+using System.Text.Json;
+
 
 namespace csharp
 {
     public class Maze
     {
-        internal bool IsWall(Position desiredPosition)
+        MazeData MazeData { get; }
+        public Maze(string fileName)
         {
-            throw new NotImplementedException();
+
+        }
+
+        public Position StartPosition { get; internal set; }
+
+        public bool IsWall(Position desiredPosition)
+        {
+            
+        }
+
+        internal bool IsExit(Position currentPosition)
+        {
+            
         }
     }
 }

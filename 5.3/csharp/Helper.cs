@@ -9,7 +9,6 @@ namespace csharp
         public static Position NextPosition(Direction direction, Position prevPosition, Maze maze)
         {
             var desiredPosition = new Position(prevPosition, direction);
-
             return maze.IsWall(desiredPosition) ? prevPosition : desiredPosition;
         }
     }
